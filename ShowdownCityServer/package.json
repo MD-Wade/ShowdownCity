@@ -1,0 +1,19 @@
+{
+  "name": "showdowncityserver",
+  "version": "1.0.0",
+  "description": "Server for online game Showdown City",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "author": "MD Wade",
+  "license": "ISC",
+  "dependencies": {
+    "socket-io": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
